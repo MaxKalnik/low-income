@@ -1,0 +1,12 @@
+include ./svg-mixins
+include ./mixins
+include ./data/states-data
+
+section.section.section--wide.section--top
+  +states_rank(top)
+
+section.section.section--wide.section--bottom
+  +states_rank(bottom)
+
+section.section.section--map
+  +iframe_map(bottom)

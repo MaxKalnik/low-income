@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_position_3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D88C37" offset="0%"></stop>
+            <stop stop-color="#9F470F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Report" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Low-Income_1440" transform="translate(-187.000000, -1278.000000)">
+            <g id="Content" transform="translate(110.000000, 90.000000)">
+                <g id="Subheader-1" transform="translate(45.000000, 614.000000)">
+                    <g id="A-Note-on-Method" transform="translate(0.000000, 468.000000)">
+                        <g id="2/3-page" transform="translate(32.000000, 106.000000)">
+                            <g id="icon_position_3">
+                                <path d="M16,29.7647474 C23.60206,29.7647474 29.7647474,23.60206 29.7647474,16 C29.7647474,8.39793995 23.60206,2.23525264 16,2.23525264 C8.39793995,2.23525264 2.23525264,8.39793995 2.23525264,16 C2.23525264,23.60206 8.39793995,29.7647474 16,29.7647474 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                                <text id="1" font-family="WhitneyHTF-Bold, Whitney HTF" font-size="14" font-weight="bold" fill="#D88C37">
+                                    <tspan x="13" y="21">1</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

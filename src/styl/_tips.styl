@@ -1,0 +1,55 @@
+.tips
+  position: relative
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+  color: $color-white
+
+.tips__upper-text
+  position: relative
+  padding-left: 126px
+  margin-bottom: 32px
+
+  +respond-to($xsmall)
+    padding-left: 0
+
+.tips__icon
+  position: absolute
+  width: 86px
+  height: 87px
+  left: 0
+  top: 0
+
+  +respond-to($xsmall)
+    position: static
+    margin-bottom: 24px
+    margin-left: auto
+    margin-right: auto
+
+.tips__item
+  padding: 24px
+  background-color: alpha(#D88C37, 0.05)
+  margin-bottom: 32px
+  border: 1px solid alpha(#D88C37, 0.2)
+  border-radius: 3px
+  &:last-child
+    margin-bottom: 0
+
+  +respond-to($xsmall)
+    border-radius: 0
+    padding: 24px 12px
+
+.tips__item-title
+  position: relative
+  display: flex
+  align-items: center
+  font-size: 18px
+  line-height: 26px
+  font-weight: 600
+  margin-bottom: 24px
+
+  +respond-to($xsmall)
+    margin-bottom: 16px
+
+.tips__item-text
+  @extend .main-text

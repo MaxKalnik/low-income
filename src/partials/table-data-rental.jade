@@ -1,0 +1,259 @@
+-
+  var values = [
+   {
+     state: "Alaska",
+     programName: "Homeless Assistance Program",
+     link: "http://nlihc.org/rental-programs/catalog/homeless-assistance-program",
+     averageBenefit: "$556.00",
+     benefitDuration: "1",
+     eligibility: "Data Not Available"
+   },
+   {
+     state: "Arizona",
+     programName: "Arizona State Housing Fund",
+     link: "http://nlihc.org/rental-programs/catalog/arizona-state-housing-fund",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Data Not Available",
+     eligibility: "60% AMI  "
+   },
+   {
+     state: "Arkansas",
+     programName: "Arkansas Housing Trust Fund",
+     link: "http://nlihc.org/rental-programs/catalog/arkansas-housing-trust-fund",
+     averageBenefit: "Currently un-funded",
+     benefitDuration: "Data Not Available",
+     eligibility: "80% AMI "
+   },
+   {
+     state: "Connecticut",
+     programName: "Rental Assistance Program Eviction Prevention Program",
+     link: "",
+     averageBenefit: "Rent – 40% of Income / Up to $1,200",
+     benefitDuration: "Ongoing / One-time Emergency",
+     eligibility: "50% AMI / 60%"
+   },
+   {
+     state: "Delaware",
+     programName: "Statewide Security Deposit Loan Program",
+     link: "http://nlihc.org/rental-programs/catalog/statewide-security-deposit-loan-program",
+     averageBenefit: "$500 cash loan",
+     benefitDuration: "N/A",
+     eligibility: "200% poverty level "
+   },
+   {
+     state: "D.C.",
+     programName: "Emergency Rental Assistance Program (ERAP)",
+     link: "http://nlihc.org/rental-programs/catalog/emergency-rental-assistance-program-erap",
+     averageBenefit: "$2,074.00",
+     benefitDuration: "One-time, Maximum $4.250",
+     eligibility: "125% Federal Poverty Line "
+   },
+   {
+     state: "Georgia",
+     programName: "Georgia Housing Voucher Program and Bridge Funding Program (GHVP)",
+     link: "http://nlihc.org/rental-programs/catalog/georgia-housing-voucher-program-and-bridge-funding-program-ghvp",
+     averageBenefit: "$544.00",
+     benefitDuration: "Transitional",
+     eligibility: "Three times the SSI federal benefit level"
+   },
+   {
+     state: "Hawaii",
+     programName: "State Rent Supplement Program",
+     link: "http://nlihc.org/rental-programs/catalog/state-rent-supplement-program",
+     averageBenefit: "$230.00",
+     benefitDuration: "Data Not Available",
+     eligibility: "80% AMI "
+   },
+   {
+     state: "Illinois",
+     programName: "Housing Advocacy and Cash Assistance Program",
+     link: "http://nlihc.org/rental-programs/catalog/housing-advocacy-and-cash-assistance-program",
+     averageBenefit: "3 months rent",
+     benefitDuration: "3",
+     eligibility: "Demonstrated need"
+   },
+   {
+     state: "Maine",
+     programName: "General Assistance",
+     link: "",
+     averageBenefit: "Rent, utilities, fuel, food, basic necessities",
+     benefitDuration: "Data Not Available",
+     eligibility: "Varies by municipality"
+   },
+   {
+     state: "Maryland",
+     programName: "Rental Allowance Program",
+     link: "http://nlihc.org/rental-programs/catalog/rental-allowance-program",
+     averageBenefit: "$170-$730 Contingent on county of residence & Family size",
+     benefitDuration: "12",
+     eligibility: "Higher of 30% AMI or less or 30% of State Median Income or less"
+   },
+   {
+     state: "Massachusetts",
+     programName: "HomeBASE Massachusetts Rental Voucher Program (MRVP) Residential Assistance for Families in Transition (RAFT)",
+     link: "",
+     averageBenefit: "HomeBASE: Rent – 35% income Maximum: $4,000/yr Rental Voucher Program: Rent – 30-40% RAFT: $4,000/yr",
+     benefitDuration: "24 / 12",
+     eligibility: "50% AMI or less / 50% AMI / "
+   },
+   {
+     state: "Michigan",
+     programName: "State Emergency Relief Fund (SER)",
+     link: "http://nlihc.org/rental-programs/catalog/state-emergency-relief-fund-ser",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Data Not Available",
+     eligibility: "Risk of Homelessness"
+   },
+   {
+     state: "Minnseota",
+     programName: "Family Homeless Prevention and Assistance Program (FHPAP) Emergency Services Program Minnesota Housing Trust Fund",
+     link: "",
+     averageBenefit: "$574.00",
+     benefitDuration: "Data Not Available",
+     eligibility: "200% of Federal Poverty Level or Risk of Homelessness / 60% for 30% AMI or less"
+   },
+   {
+     state: "Missouri",
+     programName: "Missouri Housing Trust Fund Rental Assistance Program",
+     link: "",
+     averageBenefit: "$589.00",
+     benefitDuration: "24",
+     eligibility: "100% for 50% AMI or less; 50% for 25% AMI or less / 50% AMI or less"
+   },
+   {
+     state: "Nebraska",
+     programName: "Nebraska Homeless Assistance Program (NHAP)",
+     link: "http://nlihc.org/rental-programs/catalog/nebraska-homeless-assistance-program-nhap",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Data Not Available",
+     eligibility: "30% AMI or less"
+   },
+   {
+     state: "Nevada",
+     programName: "Nevada Low Income Housing Trust Fund Welfare Set-aside Funds",
+     link: "",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "48  / One-time, Maximum $4.250",
+     eligibility: "60% AMI or less"
+   },
+   {
+     state: "New Hampshire",
+     programName: "Housing Security Guarantee Program",
+     link: "http://nlihc.org/rental-programs/catalog/housing-security-guarantee-program",
+     averageBenefit: "security deposit",
+     benefitDuration: "One-time, Maximum $4.250",
+     eligibility: "30% AMI or less"
+   },
+   {
+     state: "New Jersey",
+     programName: "State Rental Assistance Program (SRAP) New Jersey Affordable Housing Trust Fund",
+     link: "",
+     averageBenefit: "Rent – 30%",
+     benefitDuration: "60",
+     eligibility: "30% AMI or less / 80% AMI or less"
+   },
+   {
+     state: "New Mexico",
+     programName: "Rental Assistance Program",
+     link: "http://nlihc.org/rental-programs/catalog/rental-assistance-program-1",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Data Not Available",
+     eligibility: "30% AMI or less"
+   },
+   {
+     state: "New York",
+     programName: "One Shot Deal Solutions to End Homelessness Program (STEHP)",
+     link: "",
+     averageBenefit: "Rent + security",
+     benefitDuration: "6 months per 5 years / 6-12 months",
+     eligibility: "200% of Federal Poverty Level for families with children; 125% of Federal Poverty Line for singles or eligible for Cash Assistance, Food Stamps or Medicaid. / 30% AMI"
+   },
+   {
+     state: "North Dakota",
+     programName: "North Dakota Homeless Grants Program",
+     link: "http://nlihc.org/rental-programs/catalog/north-dakota-homeless-grants-program",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "24",
+     eligibility: "50% AMI or less"
+   },
+   {
+     state: "Oregon",
+     programName: "Emergency Housing Account Housing Stabilization Program Low Income Rental Housing Fund",
+     link: "",
+     averageBenefit: "Rent, utilities, repairs, moving costs",
+     benefitDuration: "6",
+     eligibility: "30% AMI or less 80% AMI or less 50% AMI or less"
+   },
+   {
+     state: "Pennsylvania",
+     programName: "Pennsylvania Housing Affordability and Rehabilitation Enhancement Fund (PHARE)",
+     link: "http://nlihc.org/rental-programs/catalog/pennsylvania-housing-affordability-and-rehabilitation-enhancement-fund-phare",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Data Not Available",
+     eligibility: "100% for 200% AMI or less; 30% for 50% AMI or less"
+   },
+   {
+     state: "Rhode Island",
+     programName: "Housing Rental Subsidy",
+     link: "http://nlihc.org/rental-programs/catalog/housing-rental-subsidy",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Data Not Available",
+     eligibility: "Data Not Available"
+   },
+   {
+     state: "Tennessee",
+     programName: "Children and Youth Homeless Outreach",
+     link: "http://nlihc.org/rental-programs/catalog/children-and-youth-homeless-outreach",
+     averageBenefit: "$264.00",
+     benefitDuration: "Short Term",
+     eligibility: "Data Not Available"
+   },
+   {
+     state: "Texas",
+     programName: "Homeless Housing and Services Program",
+     link: "http://nlihc.org/rental-programs/catalog/homeless-housing-and-services-program",
+     averageBenefit: "rent/deposits",
+     benefitDuration: "Short Term",
+     eligibility: "Risk of Homelessness"
+   },
+   {
+     state: "Utah",
+     programName: "N/A",
+     link: "",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Transitional",
+     eligibility: "80% AMI or less "
+   },
+   {
+     state: "Vermont",
+     programName: "Rental Subsidy Program",
+     link: "http://nlihc.org/rental-programs/catalog/rental-subsidy-program",
+     averageBenefit: "$635.00",
+     benefitDuration: "12",
+     eligibility: "125% of Federal Poverty Level"
+   },
+   {
+     state: "Virginia",
+     programName: "Virginia Housing Trust Fund",
+     link: "http://nlihc.org/rental-programs/catalog/virginia-housing-trust-fund",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "12",
+     eligibility: "Data Not Available"
+   },
+   {
+     state: "Washington",
+     programName: "Consolidated Homelessness Grant Emergency Shelter Assistance Program (ESAP)",
+     link: "",
+     averageBenefit: "Rent / Rent + security",
+     benefitDuration: "24 / One-Time",
+     eligibility: "50% AMI or less / Risk of Homelessness"
+   },
+   {
+     state: "Wisconsin",
+     programName: "Critical Assistance Program",
+     link: "http://nlihc.org/rental-programs/catalog/critical-assistance-program",
+     averageBenefit: "Data Not Available",
+     benefitDuration: "Data Not Available",
+     eligibility: "80% County Median Income or less"
+   }
+  ]

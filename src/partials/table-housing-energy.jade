@@ -1,0 +1,91 @@
+include ./table-data-housing-energy
+
+.section.section--table.section--table-housing
+  .breadcrumbs__wrap
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Home
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Reports
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | The Best and Worst States for Low-Income Individuals and Families
+
+    .breadcrumbs__item
+      | Low-Income Housing and Energy Assistance Program
+
+  h2.section__title.section__title--table
+    | Low-Income Housing and Energy Assistance Program
+
+  .ranking-table__container
+    .ranking-table__hint
+      .ranking-table__hint-close-btn
+      p.ranking-table__hint-text
+        | By default cities are sorted
+        br
+        | by alphabet. 
+        span.semibold
+          | You could sort by other parameter.
+
+    .mobile-only
+      table.ranking-table.ranking-table--fixed
+        thead
+          tr
+            th(class='table-sort' data-index='0') State
+
+        tbody
+          each value in values
+            tr
+              td
+                = value.state
+
+    .ranking-table__wrapper
+      table.ranking-table.ranking-table--data
+        thead
+          tr
+            th(class='table-sort' data-index='0') State
+            th(class='table-sort' data-index='1') Total Potential Benefits
+            th State Heating Cooling Repair Replacement
+            th Other State Assistance
+            th(class='table-sort' data-index='4') Monthly Average
+            th(class='table-sort' data-index='5') Average duration (in weeks)
+            th(class='table-sort' data-index='6') Average weekly benefit
+            th(class='table-sort' data-index='7') Housing Voucher Average Amount
+            th(class='table-sort' data-index='8') statewide low income threshold
+
+        tbody
+          each value in values
+            tr
+              td
+                = value.state
+
+              td
+                = value.totalBenefits
+
+              td
+                = value.stateHeating
+
+              td
+                = value.otherAssistance
+
+              td
+                = value.monthlyAverage
+
+              td
+                = value.averageDuration
+
+              td
+                = value.averageWeeklyBenefit
+
+              td
+                = value.housingVoucher
+
+              td
+                = value.hud
+
+  .btn-container.btn-container--under-table
+    a.btn-go-back(href="index.html")
+      | GO BACK TO THE FULL REPORT

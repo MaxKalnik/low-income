@@ -1,0 +1,80 @@
+include ./table-data-rental
+
+.section.section--table.section--table-rental
+  .breadcrumbs__wrap
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Home
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Reports
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | The Best and Worst States for Low-Income Individuals and Families
+
+    .breadcrumbs__item
+      | State Rental Assistance Programs
+
+  h2.section__title.section__title--table
+    | State Rental Assistance Programs
+
+  .ranking-table__container
+    .ranking-table__hint
+      .ranking-table__hint-close-btn
+      p.ranking-table__hint-text
+        | By default cities are sorted
+        br
+        | by alphabet. 
+        span.semibold
+          | You could sort by other parameter.
+
+    .mobile-only
+      table.ranking-table.ranking-table--fixed
+        thead
+          tr
+            th(class='table-sort' data-index='0') State
+
+        tbody
+          each value in values
+            tr
+              td
+                = value.state
+
+    .ranking-table__wrapper
+      table.ranking-table.ranking-table--data
+        thead
+          tr
+            th(class='table-sort' data-index='0') State
+            th Program Name
+            th Average Benefit
+            th Benefit Duration (months)
+            th Eligibility
+
+        tbody
+          each value in values
+            tr
+              td
+                = value.state
+
+              td
+                if (value.link)
+                  a.ranking-table__link(href='#{value.link}')
+                    = value.programName
+
+                else
+                  = value.programName
+
+              td
+                = value.averageBenefit
+
+              td
+                = value.benefitDuration
+
+              td
+                = value.eligibility
+
+  .btn-container.btn-container--under-table
+    a.btn-go-back(href="index.html")
+      | GO BACK TO THE FULL REPORT
