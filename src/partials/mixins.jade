@@ -40,6 +40,18 @@ mixin states_rank(stateData)
 
       +btn_icon
 
+  .btn__container.btn__container--mob-hidden
+    a.btn__main(href='/low-income-benefits-housing-and-energy.html')
+      span.btn__main-text CLICK HERE FOR THE Benefits by State RANKING (Social Programs)
+
+      +btn_icon
+
+  .btn__container
+    a.btn__main(href='/low-income-benefits-rental-assistance.html')
+      span.btn__main-text CLICK HERE FOR THE Benefits by State RANKING (Rental Assistance)
+
+      +btn_icon
+
 mixin iframe_map(stateData)
   if (stateData.iframe)
     .section__title

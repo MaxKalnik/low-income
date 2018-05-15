@@ -41,6 +41,17 @@ ul,li
   +respond-from($large)
     background-image url(images/footer_bg.png), url(images/svg/clouds_bg.svg) , none, linear-gradient(-180deg, #34c4f0 0, #1c90e2 100%)
 
+.section--table-rental
+  +respond-to($xsmall)
+    .ranking-table__container
+      display: none
+
+    .section__title
+      display: none
+
+    .breadcrumbs__wrap
+      display: none
+
 .under-title__text
   font-size: 14px
   line-height: 24px

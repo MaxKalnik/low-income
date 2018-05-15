@@ -5,7 +5,7 @@ mapBtn(primaryColor)
   .btn__container
     display: flex
     justify-content: center
-    margin-top: 45px
+    margin-top: 25px
 
     +respond-to($xsmall)
       margin: 4px 12px 0 12px
@@ -14,6 +14,10 @@ mapBtn(primaryColor)
     margin-top: 32px
     +respond-from($large)
       margin-top: 42px
+
+  .btn__container--mob-hidden
+    +respond-to($xsmall)
+      display: none
 
   .btn__main-text
     border-bottom: 1px solid alpha(primaryColor, 0.3)
@@ -59,7 +63,7 @@ mapBtn(primaryColor)
 
     +respond-to($xsmall)
       width: 100%
-      max-width: 300px
+      max-width: 400px
       display: block
       padding: 10px 12px
       font-size: 10px
