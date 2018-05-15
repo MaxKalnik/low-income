@@ -196,7 +196,7 @@
 
 .btn-go-back
   display: inline-block
-  color: #24A0EE
+  color: #1b109f
   border-radius: 5px
   padding: 12px 24px
   font-size: 12px
@@ -205,9 +205,9 @@
   text-transform: uppercase
   cursor: pointer
   transition: .25s
-  border: 1px solid rgba(29, 125, 224,.2)
+  border: 1px solid rgba(27,16,159,.2)
   &:hover
-    background: #24A0EE
+    background: #1b109f
     color: #ffffff
     border-color: #ffffff
 
@@ -294,7 +294,6 @@
     .ranking-table__wrapper
       overflow: hidden
 
-
 +respond-to($small)
   .section--table
     .breadcrumbs__wrap
@@ -348,3 +347,8 @@
 
   .ranking-table__link
     @extend .main-link
+
+.btn-container.btn-container--under-table
+  margin-top: 45px
+  +respond-to($xsmall)
+    margin-top: 32px

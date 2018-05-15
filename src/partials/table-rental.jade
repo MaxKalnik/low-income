@@ -1,4 +1,5 @@
 include ./table-data-rental
+include ./svg-mixins
 
 .section.section--table.section--table-rental
   .breadcrumbs__wrap
@@ -74,6 +75,40 @@ include ./table-data-rental
 
               td
                 = value.eligibility
+
+  .map__user-block.map__user-block--table
+    .map__btn-wrapper.map__btn-wrapper--share
+      button.map__btn.map__btn--share
+        span.map__btn-text
+          | Share
+
+        +share_svg
+
+      .map__btn-container.map__btn-container--share
+        .map__btn-socials
+          a.map__btn-socials-item.map__btn-socials-item--fb(href="")
+            img.socials-logo(src="images/svg/fb-share.svg")
+
+          a.map__btn-socials-item.map__btn-socials-item--tw(href="")
+            img.socials-logo(src="images/svg/tw-share.svg")
+
+          a.map__btn-socials-item.map__btn-socials-item--go(href="")
+            img.socials-logo(src="images/svg/go-share.svg")
+
+    .map__btn-wrapper.map__btn-wrapper--embed
+      button.map__btn.map__btn--embed
+        span.map__btn-text
+          | Embed
+
+        +embed_svg
+
+      .map__btn-container.map__btn-container--embed
+        .map__btn-embed
+          textarea.map__btn-embed-text#copyTarget(autofocus='', readonly='')
+            | <iframe src="https://www.rewardexpert.com/shared/low-income/low-income-full-table/" width="1130px" height="2620px" frameborder="0" scrolling="no"></iframe><div style="width:100%;text-align:right;font-size:14px;color:#0a0c0d;margin-bottom:16px;">Source: <a style="color:#2093cd;" href="https://www.rewardexpert.com/blog/studies/the-best-and-worst-states-for-low-income-individuals-and-families/">RewardExpert Blog</a></div>
+
+          button.map__btn-embed-copy#copyButton
+            | copy to clipboard
 
   .btn-container.btn-container--under-table
     a.btn-go-back(href="index.html")
