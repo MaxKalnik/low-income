@@ -345,8 +345,44 @@
     +respond-to($xsmall)
       left: 10px
 
+    +respond-to($xxsmall)
+      left: -4px
+
   .ranking-table__link
     @extend .main-link
+
+  +respond-to($medium)
+    .mobile-only
+      width: 120px
+
+    .ranking-table.ranking-table--data
+      min-width: 1420px
+
+    .ranking-table.ranking-table--fixed
+      width: 120px
+
+    .ranking-table__wrapper
+      width: calc(100% - 120px)
+      overflow-x: scroll
+
+  +respond-to($xxsmall)
+    .mobile-only
+      width: 107px
+
+    .ranking-table.ranking-table--data
+      min-width: 1420px
+
+    .ranking-table.ranking-table--fixed
+      width: 107px
+
+    .ranking-table__wrapper
+      width: calc(100% - 107px)
+
+    .ranking-table
+      tbody
+        td
+          padding: 0 4px
+          font-size: 10px
 
 .btn-container.btn-container--under-table
   margin-top: 45px
