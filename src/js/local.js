@@ -82,14 +82,28 @@ $(document).ready(function () {
             if (parseFloatText(left)) {
                 left = parseFloatText(left);
             } else if (left.includes('$')) {
-                left = parseFloatText(left.split('$')[1]);
+                left = left.split('$')[1];
+                if (left.includes(',')) {
+                    left = left.replace(/,/g, '');
+                }
+                left = parseFloatText(left);
+            } else if (left.includes('%')) {
+                left = left.split('$')[0];
+                left = parseFloatText(left);
             }
             var right = $(b).find('td')[$index];
             right = $(right).text();
             if (parseFloatText(right)) {
                 right = parseFloatText(right);
             } else if (right.includes('$')) {
-                right = parseFloatText(right.split('$')[1]);
+                right = right.split('$')[1];
+                if (right.includes(',')) {
+                    right = right.replace(/,/g, '');
+                }
+                right = parseFloatText(right);
+            } else if (right.includes('%')) {
+                right = right.split('$')[0];
+                right = parseFloatText(right);
             }
             if (descend) {
                 if (left > right) {

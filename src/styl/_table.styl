@@ -9,8 +9,11 @@
 
 .ranking-table__arrow-icon
   position: absolute
+  visibility: hidden
   top: 111px
   right: 10px
+  +respond-to($medium)
+    visibility: visible
 
 .ranking-table__hint
   position: absolute
